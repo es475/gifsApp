@@ -3,4 +3,5 @@
    <input type="text" 
    class="form-control"
    placeholder="Buscar gifs..."
-   (keyup)="buscar( $event )"/>
+   (keyup.enter)="buscar()"
+   #txtBuscar/>
