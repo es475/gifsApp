@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
@@ -13,6 +14,7 @@ import { SidebarModule } from './sidebar/sidebar.module';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     SidebarModule,
     GifsModule
   ],

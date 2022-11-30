@@ -1,1 +1,22 @@
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus cumque in enim illo et beatae aperiam corporis dolorem possimus ratione nostrum officiis rerum consectetur, quaerat voluptatem recusandae dolor quas eius.
+<!--  <ul>
+    <li *ngFor="let img of resultados">
+       {{img.title}} 
+    </li>
+ </ul> -->
+
+ <div class="row">
+    <div *ngFor="let img of resultados"
+          class="col-md-4 col-sm-6">
+          <div class="card">
+            <img [src]=" img.images.downsized_medium.url" 
+            [alt]="img.title"
+            class="card-img-top">
+            <div class="card-body">
+                <p class="card-text">
+                    {{img.title}} 
+                   
+                </p>
+            </div>
+          </div>
+    </div>
+ </div>
